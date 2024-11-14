@@ -1,0 +1,4 @@
+title: My GitHub Page
+description: a website
+baseurl: "" # If your site is a project site, set this to "/repository-name"
+theme: minima
