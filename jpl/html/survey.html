@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="日本語勉強サイトのアンケートページ" />
+    <meta name="author" content="Benjamin Searight" />
+    <meta name="keywords" content="Japanese, 日本語, Study, 勉強, Language, 言語" />
+    <title>日本語勉強サイト</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/survey.css" />
+  </head>
+  <body>
+    <div class="navheader">
+      <h1 class="site-title">日本語勉強サイト</h1>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="../index.html">ホーム</a></li>
+          <li><a class="nav-link" href="./info.html">情報</a></li>
+          <li><a class="nav-link nav-link--active" href="./survey.html">アンケート</a></li>
+          <li><a class="nav-link" href="./resources.html">リソース</a></li>
+          <li><a class="nav-link" href="./blog.html">ブログ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>日本語を勉強興味アンケート</h1>
+    <img class="survey-image" src="../images/gaitou_anke-to.png" alt="アンケート">
+
+    <!-- form to collect survey data -->
+    <fieldset>
+      <legend>アンケートフォーム</legend>
+      <p>以下の質問にお答えください。</p>
+    <form action="/survey" method="post">
+      <label for="name">名前:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="reason">なぜ日本語を勉強していますか？</label><br />
+      <select id="reason" name="reason">
+        <option value="anime">アニメ</option>
+        <option value="manga">漫画</option>
+        <option value="travel">旅行</option>
+        <option value="work">仕事</option>
+        <option value="culture">文化</option>
+        <option value="other">その他</option></select
+      ><br /><br />
+      <label for="level">日本語のレベルは？</label><br />
+      <input type="radio" id="beginner" name="level" value="beginner" />初心者<br />
+      <input type="radio" id="n5" name="level" value="n5" />JLPT N5<br />
+      <input type="radio" id="n4" name="level" value="n4" />JLPT N4<br />
+      <input type="radio" id="n3" name="level" value="n3" />JLPT N3<br />
+      <input type="radio" id="n2" name="level" value="n2" />JLPT N2<br />
+      <input type="radio" id="n1" name="level" value="n1" />JLPT N1<br />
+      <input type="radio" id="n0" name="level" value="n0" />日本人みたい<br />
+      <br />
+      <label for="goal">日本語の目標は？</label><br />
+      <input type="text" id="goal" name="goal" /><br /><br />
+      <input type="submit" value="送信" />
+    </form>
+    </fieldset>
+  </body>
+</html>

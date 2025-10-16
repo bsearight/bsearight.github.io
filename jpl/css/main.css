@@ -1,0 +1,128 @@
+html {
+  background-color: #000;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: clamp(12px, 3.5vw, 24px);
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	background: url('../images/bg.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: scroll;
+	min-height: 100dvh;
+	overflow-x: hidden;
+}
+
+.navheader {
+	text-align: center;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+.site-title {
+	color: lightpink;
+	font-size: clamp(28px, 6vw, 64px);
+}
+
+p {
+	font-size: clamp(16px, 1.8vw, 18px);
+}
+
+.subjectheader {
+	color: lightblue;
+}
+
+h1,
+h2,
+h3 {
+	color: lightblue;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav {
+	width: 100%;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: clamp(8px, 2vw, 16px);
+	flex-wrap: wrap;
+}
+
+nav ul li {
+	margin: 0;
+}
+
+.nav-link {
+	display: inline-block;
+	padding: clamp(6px, 1.2vw, 10px) clamp(12px, 2.4vw, 18px);
+	border-radius: 9999px;
+	border: 1px solid lightblue;
+	color: lightblue;
+	background-color: rgba(173, 216, 230, 0.15);
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+		border-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	background-color: rgba(173, 216, 230, 0.3);
+	color: #ffffff;
+	box-shadow: 0 4px 12px rgba(173, 216, 230, 0.3);
+}
+
+.nav-link--active {
+	border-color: lightgreen;
+	background-color: rgba(144, 238, 144, 0.25);
+	color: #e6ffe6;
+}
+
+img {
+		max-width: 100%;
+		height: auto;
+}
+
+.info-image {
+		width: 100%;
+		max-width: 360px;
+		height: auto;
+		display: block;
+		margin: 12px auto;
+}
+
+@media (min-width: 768px) {
+	body {
+		background-attachment: fixed;
+	}
+}
+
+@media (max-width: 600px) {
+	nav {
+		padding: 8px;
+	}
+	.nav-link {
+		font-size: 0.95rem;
+	}
+}
+
+@media (orientation: landscape) and (max-height: 480px) {
+	body { margin: 8px; }
+	.site-title { font-size: clamp(20px, 4.5vw, 40px); }
+}
