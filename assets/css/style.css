@@ -3,20 +3,20 @@ body{
     color: white;
     margin: 0;
     padding: 16px;
-    text-align: center; /* center headings and inline elements by default */
+    text-align: center;
 }
 a{
-    color: white
+    color: white;
 }
 nav{
     background-color: black;
-    width: 100%; /* use full width so content below isn't squeezed left */
+    width: 100%;
 }
 nav ul{
     padding: 10px;
     margin: 0px auto;
     list-style-type: none;
-    text-align: center; /* center the inline list items */
+    text-align: center
 }
 nav ul li{
     display: inline;
