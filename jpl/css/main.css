@@ -17,10 +17,19 @@ body {
 	overflow-x: hidden;
 }
 
+.backbutton {
+	position: fixed;
+	top: clamp(8px, 2vw, 16px);
+	left: clamp(8px, 2vw, 16px);
+	z-index: 1000;
+}
+
 .navheader {
 	text-align: center;
 	margin-bottom: 20px;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .site-title {
@@ -69,7 +78,8 @@ nav ul li {
 	margin: 0;
 }
 
-.nav-link {
+.nav-link,
+.backbutton a {
 	display: inline-block;
 	padding: clamp(6px, 1.2vw, 10px) clamp(12px, 2.4vw, 18px);
 	border-radius: 9999px;
@@ -82,7 +92,9 @@ nav ul li {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.backbutton a:hover,
+.backbutton a:focus {
 	background-color: rgba(173, 216, 230, 0.3);
 	color: #ffffff;
 	box-shadow: 0 4px 12px rgba(173, 216, 230, 0.3);
