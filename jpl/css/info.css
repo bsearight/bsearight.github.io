@@ -1,0 +1,21 @@
+.info_link {
+    display: inline-block;
+    margin: 12px auto;
+}
+
+.info_link img {
+    display: block;
+    width: clamp(120px, 28vw, 200px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid lightblue;
+    box-shadow: 0 4px 12px rgba(173, 216, 230, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info_link:hover img,
+.info_link:focus img {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(173, 216, 230, 0.4);
+}
