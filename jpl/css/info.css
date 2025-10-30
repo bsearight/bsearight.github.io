@@ -19,3 +19,12 @@
     transform: scale(1.03);
     box-shadow: 0 6px 16px rgba(173, 216, 230, 0.4);
 }
+
+.info_text {
+    max-width: 720px;
+    margin: 12px auto;
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-align: center;
+}

@@ -65,6 +65,18 @@
 	width: clamp(84px, 12vw, 115px);
 	height: auto;
 	margin: 0 auto;
+	aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid lightblue;
+	box-shadow: 0 4px 12px rgba(173, 216, 230, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-logo:hover,
+.resource-logo:focus {
+	transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(173, 216, 230, 0.4);
 }
 
 .resource-subtitle {

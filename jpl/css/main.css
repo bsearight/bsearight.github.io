@@ -99,7 +99,7 @@ nav ul {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	gap: clamp(4px, 1.2vw, 10px);
+	gap: clamp(3px, 1.1vw, 8px);
 	flex-wrap: wrap;
 	flex-grow: 0;
 }
