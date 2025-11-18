@@ -20,11 +20,13 @@
 }
 
 .blog-content {
-		font-size: clamp(15px, 1.9vw, 16px);
-		line-height: 1.6;
-		color: #ddd;
+	font-size: clamp(15px, 1.9vw, 16px);
+	line-height: 1.6;
+	color: #ddd;
 }
 
 @media (max-width: 480px) {
-	.blog-title { font-size: 1.25rem; }
+	.blog-title {
+		font-size: 1.25rem;
+	}
 }
