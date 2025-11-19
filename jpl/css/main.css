@@ -69,6 +69,10 @@ p {
 	font-size: clamp(16px, 1.8vw, 18px);
 }
 
+hr {
+	margin: 64px auto;
+}
+
 .warning {
 	color: lightcoral;
 	font-weight: bold;
